@@ -113,6 +113,7 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
 vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=0
+debug.hwui.use_buffer_age=false
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp

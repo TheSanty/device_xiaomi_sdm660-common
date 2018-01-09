@@ -137,6 +137,10 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+
+
+# Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # SELinux

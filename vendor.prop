@@ -111,6 +111,8 @@ vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
+vendor.display.disable_rotator_downscale=1
+vendor.display.disable_scaler=0
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp

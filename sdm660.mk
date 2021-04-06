@@ -300,6 +300,10 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
     android.system.net.netd@1.1.vendor
 
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \

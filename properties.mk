@@ -142,7 +142,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     ro.hardware.egl=adreno \
-    ro.hardware.vulkan=adreno
+    ro.hardware.vulkan=sdm660
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \

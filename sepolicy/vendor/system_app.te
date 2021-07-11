@@ -4,3 +4,6 @@ allow system_app sysfs_vibrator:file rw_file_perms;
 allow system_app sysfs_usb_fastcharge:file { open read getattr write };
 allow system_app kcal_sysfs:dir search;
 allow system_app kcal_sysfs:file rw_file_perms;
+
+# allow system apps to read battery status
+r_dir_file(system_app, sysfs_battery_supply)

@@ -201,3 +201,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WFD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.debug.wfd.enable=0
+
+# Set lmkd options
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.low_ram=false \
+    ro.lmk.use_psi=false

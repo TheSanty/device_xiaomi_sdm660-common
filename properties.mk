@@ -211,3 +211,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
    iorapd.perfetto.enable=true \
    iorapd.readahead.enable=true
+
+# Disable vsync for cpu rendered apps
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false

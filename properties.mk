@@ -209,6 +209,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
+   ro.iorapd.enable=true \
    iorapd.perfetto.enable=true \
    iorapd.readahead.enable=true
 

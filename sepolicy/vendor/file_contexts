@@ -30,11 +30,8 @@
 # Root files
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
 
-# Debugfs
-/sys/kernel/debug/system_stats                                                                                              u:object_r:debugfs:s0
-
 # Power
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service\.xiaomi_sdm660-libperfmgr                              u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.xiaomi_sdm660-libperfmgr                                        u:object_r:hal_power_default_exec:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0

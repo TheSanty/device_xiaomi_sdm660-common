@@ -133,11 +133,11 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Properties
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-
-
-# Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk

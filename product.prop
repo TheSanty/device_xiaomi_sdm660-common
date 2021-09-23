@@ -1,4 +1,5 @@
 # LMKD
+ro.config.low_ram=false
 ro.lmk.low=1001
 ro.lmk.medium=0
 ro.lmk.critical=0
@@ -9,6 +10,7 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 ro.lmk.log_stats=true
+ro.lmk.use_psi=false
 
 # Memory Management
 ro.config.fha_enable=true 
@@ -20,3 +22,12 @@ ro.config.dha_lmk_scale=0.545
 ro.config.dha_th_rate=2.3 
 ro.config.sdha_apps_bg_max=64 
 ro.config.sdha_apps_bg_min=8
+
+# Charger
+ro.charger.disable_init_blank=true
+ro.charger.enable_suspend=true
+
+# IORAP
+ro.iorapd.enable=true
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true

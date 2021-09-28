@@ -22,6 +22,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.provider.Settings;
 import android.util.Log;
+import android.content.SharedPreferences;
+import androidx.preference.PreferenceManager;
 
 import com.xiaomiparts.settings.doze.DozeUtils;
 import com.xiaomiparts.settings.kcal.Utils;
@@ -37,6 +39,8 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Utils {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         DozeUtils.checkDozeService(context);
         VibratorStrengthPreference.restore(context);
+		
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         if (Settings.Secure.getInt(context.getContentResolver(), PREF_ENABLED, 0) == 1) {
             FileUtils.setValue(KCAL_ENABLE, Settings.Secure.getInt(context.getContentResolver(),
@@ -64,7 +68,12 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Utils {
                     PREF_HUE, HUE_DEFAULT));
         }
 
-        FileUtils.setValue(XiaomiParts.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                XiaomiParts.PREF_USB_FASTCHARGE, 0));
+            FileUtils.setValue(XiaomiParts.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
+                    XiaomiParts.PREF_USB_FASTCHARGE, 0));
+			
+            boolean enabled = sharedPrefs.getBoolean(XiaomiParts.PREF_KEY_FPS_INFO, false);
+            if (enabled) {
+            context.startService(new Intent(context, FPSInfoService.class));
+        }
     }
 }

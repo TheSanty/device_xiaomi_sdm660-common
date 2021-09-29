@@ -21,11 +21,7 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
-    androidx.preference_preference \
-	airbnb-lottie
-	
-LOCAL_JAVA_LIBRARIES := \
-    airbnb-lottie
+    androidx.preference_preference 
 
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res

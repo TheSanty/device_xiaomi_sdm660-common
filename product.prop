@@ -31,3 +31,7 @@ ro.charger.enable_suspend=true
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+
+# Perf
+ro.vendor.perf.scroll_opt=true
+ro.vendor.perf.scroll_opt.heavy_app=true

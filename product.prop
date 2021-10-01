@@ -21,3 +21,9 @@ iorapd.readahead.enable=true
 # Perf
 ro.vendor.perf.scroll_opt=true
 ro.vendor.perf.scroll_opt.heavy_app=true
+
+# Set lmkd options
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+ro.lmk.use_psi=false
+

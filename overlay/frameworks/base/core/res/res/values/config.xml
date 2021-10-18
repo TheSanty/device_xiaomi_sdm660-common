@@ -321,4 +321,9 @@
          the blur effect where it isn't worth the performance hit.
          As of Honeycomb, blurring is not supported anymore. -->
     <bool name="config_sf_slowBlur">false</bool>
+
+    <!-- Radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">39px</dimen>
+    <dimen name="rounded_corner_radius_top">38px</dimen>
+    <dimen name="rounded_corner_radius_bottom">39px</dimen>
 </resources>
